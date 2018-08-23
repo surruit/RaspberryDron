@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Dron</title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+    </head>
+	
+    <body>
+        Potencia: <input id="slider" type="RANGE" min="0" max="100" step="1" value="0"/> <span id="sliderValue">0%</span>
+        
+        <script>
+            //configuracion webSocket
+            websocket1 = new WebSocket("ws://192.168.0.101:8765");
+            
+            //configuracion del slider
+            var slider = document.getElementById("slider");
+            var sliderValue = document.getElementById("sliderValue");
+            slider.oninput = function (){
+                sliderValue.innerHTML = slider.value + "%";
+                websocket1.send(slider.value);
+            }
+        </script>
+    </body>
+    
+
+<html>
