@@ -1,4 +1,4 @@
-Cliente web que envia la informacion de potencia por WebSocket.
+Cliente web que envía la información de potencia por WebSocket.
 
 No es necesario un servidor web y no es necesario que esté en la raspberry, pero requiere que se ejecute en un dispositivo que esté en la misma red local.
 
