@@ -8,6 +8,7 @@ Si no lo tienes, instala Python3 y las librerias Websocket y RPIO.
 Copia *Python Server/main.py* a la Raspberry Pi
 
 Ejecuta el fichero, si todo esta correcto, se vera esto:
+
 ![ImagenShell-ConexionOK](/Imagenes/ImagenShell-ConexionOK.png)
 
 En este momento, hay un servidor WebSocket esperando un numero del 0 al 100, indicando la potencia en porcentaje.
